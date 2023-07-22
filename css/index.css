@@ -1,0 +1,48 @@
+#titulo_pagina
+{
+
+	/* Estructura */
+	position: relative;
+	display: flex;
+	width: 100%;
+	margin: -8px;
+	padding: 25px 0px;
+	text-align: center;
+
+	/* Colores */
+	color: white;
+	
+
+	/* Fuente */
+	font-size: 50px;
+
+}
+
+/**********************************************************************/
+/* Imagen del gimnasio */
+#titulo_pagina .imagen
+{
+
+	/* Estructura */
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+
+	
+
+	background-color: black;
+	
+
+}
+#titulo_pagina img
+{
+
+	/* Estructura */
+	width: 100%;
+	
+	opacity: 25%;
+}
+#titulo_pagina .titulo_4 { position: absolute; width: 100%;  }
+#titulo_pagina h4 { width: 100%; }
+/**********************************************************************/
