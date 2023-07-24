@@ -19,30 +19,65 @@
 }
 
 /**********************************************************************/
-/* Imagen del gimnasio */
-#titulo_pagina .imagen
+/* Imagen de fondo*/
+.fondo
 {
 
 	/* Estructura */
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	left: 0px;
 	right: 0px;
-
 	
-
+	/* Color Opacidad */
 	background-color: black;
 	
 
 }
-#titulo_pagina img
+.fondo img
 {
 
 	/* Estructura */
 	width: 100%;
 	
-	opacity: 25%;
+	/* Formato */
+	opacity: 30%;
 }
+/**********************************************************************/
+
+.cabecera
+{
+
+	/* Estructura */
+	position: relative;
+	margin: -8px;
+	height: 150px;
+
+	/* Color */
+	background-color: rgb(255, 255, 255);
+
+}
+.cabecera img
+{
+
+	/* Estructura */
+	position: absolute;
+	width: 300px;
+
+}
+
 #titulo_pagina .titulo_4 { position: absolute; width: 100%;  }
 #titulo_pagina h4 { width: 100%; }
 /**********************************************************************/
+
+.imagenFadeIn { animation: imageFadeInAnim 3s; }
+@keyframes imageFadeInAnim {
+	from { opacity: 0; }
+	to   { opacity: 0.5; }
+}
+
+.imagenFadeOut { animation: imagenFadeOutAnim 3s; }
+@keyframes imagenFadeOutAnim {
+	from { opacity: 0.5; }
+	to   { opacity: 0; }
+}
