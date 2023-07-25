@@ -14,70 +14,25 @@
 	
 
 	/* Fuente */
-	font-size: 50px;
+	font-size: 35px;
 
 }
-
-/**********************************************************************/
-/* Imagen de fondo*/
-.fondo
+#titulo_pagina .titulo_4
 {
-
-	/* Estructura */
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	right: 0px;
 	
-	/* Color Opacidad */
-	background-color: black;
-	
-
-}
-.fondo img
-{
-
-	/* Estructura */
-	width: 100%;
-	
-	/* Formato */
-	opacity: 30%;
-}
-/**********************************************************************/
-
-.cabecera
-{
-
-	/* Estructura */
-	position: relative;
-	margin: -8px;
-	height: 150px;
-
-	/* Color */
-	background-color: rgb(255, 255, 255);
-
-}
-.cabecera img
-{
-
 	/* Estructura */
 	position: absolute;
-	width: 300px;
-
+	top: 50px;
+	left: -250px;
+	width: 100%; 
 }
-
-#titulo_pagina .titulo_4 { position: absolute; width: 100%;  }
 #titulo_pagina h4 { width: 100%; }
 /**********************************************************************/
 
-.imagenFadeIn { animation: imageFadeInAnim 3s; }
-@keyframes imageFadeInAnim {
-	from { opacity: 0; }
-	to   { opacity: 0.5; }
-}
+.seccion
+{
 
-.imagenFadeOut { animation: imagenFadeOutAnim 3s; }
-@keyframes imagenFadeOutAnim {
-	from { opacity: 0.5; }
-	to   { opacity: 0; }
+	height: 500px;
+	background-color: white;
+
 }
