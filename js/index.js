@@ -10,7 +10,9 @@ var timeout_imagen		= 3000	; // Timeout de la imagen (milisegundos)
 function inicializarPagina()
 {
 
-    cambiarImagen();
+    $("#cabecera").load("cabecera.html");
+
+    setTimeout( function() { cambiarImagen(); }, 3000);
 
 }
 
@@ -44,9 +46,9 @@ function cambiarImagen()
 function imagenActual(imagen_fondo)
 {
 
-    if(imagen_seleccionada == 3) imagen_seleccionada = 1;
+    if(imagen_seleccionada == 4) imagen_seleccionada = 1;
     else imagen_seleccionada++;
 
-    imagen_fondo.src = "img/FotoPortada" + imagen_seleccionada + ".jpg";
+    imagen_fondo.src = "img/fotosPortada/FotoPortada" + imagen_seleccionada + ".jpg";
     
 }
