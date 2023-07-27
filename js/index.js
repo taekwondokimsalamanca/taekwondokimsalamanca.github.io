@@ -10,8 +10,6 @@ var timeout_imagen		= 3000	; // Timeout de la imagen (milisegundos)
 function inicializarPagina()
 {
 
-    $("#cabecera").load("cabecera.html");
-
     setTimeout( function() { cambiarImagen(); }, 3000);
 
 }
