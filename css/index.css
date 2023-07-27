@@ -32,17 +32,39 @@
 .seccion
 {
 
+	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 200px;
 	margin: -8px;
-	background-color: white;
 
 }
 
-#primera_seccion
+#seccion_fondo
 {
 
 	position: absolute;
-	top: 450px;
+	top: 600px;
+	height: 100%;
+	width: 100%;
+	margin: -8px;
+	background-color: black;
 
 }
+
+.seccion_impar { text-align: left ; }
+.seccion_par   { text-align: right; }
+
+.seccion .titulo_1
+{
+
+	margin: 45px
+
+}
+
+#primera_seccion { top: 600px ; background-color: #ffffff; }
+#segunda_seccion { top: 800px ; background-color: #fffd94; }
+#tercera_seccion { top: 1000px; background-color: #ffda94; }
+#cuarta_seccion  { top: 1200px; background-color: #94ff9d; }
+#quinta_seccion  { top: 1400px; background-color: #94b6ff; }
+#sexta_seccion   { top: 1600px; background-color: #ff9494; }
+#septima_seccion { top: 1800px; background-color: #000000; color: #ffffff; }
