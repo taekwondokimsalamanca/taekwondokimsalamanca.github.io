@@ -10,7 +10,7 @@ var timeout_imagen		= 3000	; // Timeout de la imagen (milisegundos)
 function inicializarPagina()
 {
 
-    setTimeout( function() { cambiarImagen(); }, 3000);
+	setTimeout( function() { cambiarImagen(); }, 3000);
 
 }
 

@@ -13,6 +13,14 @@ html { font-family: 'Roboto', sans-serif; }
 .letra_inicial { font-size: 50px; }
 /**********************************************************************/
 
+a { color: inherit; text-decoration: none; }
+
+/**********************************************************************/
+/* MArgenes que sobran */
+/***********************************/
+body, h1 { margin: 0px; }
+/**********************************************************************/
+
 
 
 /**********************************************************************/
@@ -22,12 +30,15 @@ html { font-family: 'Roboto', sans-serif; }
 {
 
 	/* Estructura */
-	position: relative;
-	margin: -8px;
+	position: fixed;
+	width: 100%;
 	height: 50px;
 
 	/* Color */
-	background-color: rgb(255, 255, 255);
+	background-color: #ffffff;
+
+	/* Prioridad */
+	z-index: 999;
 
 }
 /***********************************/
@@ -37,9 +48,33 @@ html { font-family: 'Roboto', sans-serif; }
 
 	/* Estructura */
 	position: absolute;
+	top: 0px;
     right: 0px;
 	width: 170px;
 
+	/* Prioridad */
+	z-index: 999;
+
+}
+
+.cabecera .paginas { display: flex; }
+
+.cabecera .pagina
+{
+
+	/* Estructura */
+	width: 10%;
+	padding: 16px 0px;
+	text-align: center;
+
+}
+
+.cabecera .pagina:has(> a:hover)
+{
+
+	/* Colores */
+	background-color: #000000;
+	color: #ffffff;
 }
 /**********************************************************************/
 
@@ -50,12 +85,6 @@ html { font-family: 'Roboto', sans-serif; }
 /***********************************/
 .fondo
 {
-
-	/* Estructura */
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	right: 0px;
 	
 	/* Color Opacidad */
 	background-color: black;
@@ -67,7 +96,7 @@ html { font-family: 'Roboto', sans-serif; }
 {
 
 	/* Estructura */
-    width: 100%;
+	width: 100%;
 	
 	/* Formato */
 	opacity: 25%;
@@ -81,7 +110,7 @@ html { font-family: 'Roboto', sans-serif; }
 /***********************************/
 .tituloAparicion { animation: tituloAparicionAnim 4s; }
 @keyframes tituloAparicionAnim {
-	from { top: -150px; }
+	from { top: -75px; }
 	to   { top:  50px; }
 }
 /***********************************/
