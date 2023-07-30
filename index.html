@@ -6,6 +6,7 @@
 	<style> @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); </style>	<!-- Fuente Roboto -->
 	<link rel="stylesheet" type="text/css" href="css/general.css">													<!-- Hoja de estilos general -->
 	<link rel="stylesheet" type="text/css" href="css/index.css">													<!-- Hoja de estilos de la pAgina -->
+	<script src="https://kit.fontawesome.com/6a73e4056b.js" crossorigin="anonymous"></script>						<!-- Set Personalizado de Iconos  -->
 
 	<script src="js/index.js"></script>
 	<script src="js/jquery-3.7.0.min.js"></script>
@@ -16,8 +17,8 @@
 
 	<div class="cabecera">
 		<div class="paginas">
-			<div class="pagina"> <a href="index.html"> <strong> INICIO </strong> </a> </div>
-			<div class="pagina"> <a href="index.html"> <strong> CONTACTO </strong> </a> </div>
+			<div class="pagina" onclick="window.location='index.html'"> <strong> INICIO </strong> </div>
+			<div class="pagina" onclick="window.location='index.html'"> <strong> CONTACTO </strong> </div>
 		</div>
 		<div class="logo" > <img src="img/gimnasioKimLogo.png"> </div>
 	</div>
@@ -25,8 +26,22 @@
 	<div id="titulo_pagina"> <div class="titulo_4 tituloAparicion"> <h4> <span class="letra_inicial">G</span>IMNASIO <span class="letra_inicial">K</span>IM <span class="letra_inicial">S</span>ALAMANCA </h4> </div> </div>
 	<div class="fondo"> <img src="img/fotosPortada/FotoPortada1.jpg" /> </div>
 
-	<div id="primera_seccion" class="seccion seccion_impar"	> <div class="titulo_1"> <h1> <span class="letra_inicial">I</span>NICIA TU ENTRENAMIENTO <br> CON NOSOTROS </h1> </div> </div>
-	<div id="segunda_seccion" class="seccion seccion_par"	> <div class="titulo_1"> <h1> <span class="letra_inicial">I</span>NICIA TU ENTRENAMIENTO <br> CON NOSOTROS </h1> </div> </div>
+	<div id="primera_seccion" class="seccion seccion_impar"	>
+		<div class="titulo_1"> <h1> <span class="letra_inicial">I</span>NICIA TU ENTRENAMIENTO <br> CON NOSOTROS </h1> </div>
+		<div class="contenido">
+			<div id="contacto">
+				<div id="telefono">
+					<div> <i class="fa-solid fa-phone"></i> </div>
+					<div> 620 60 54 12 </div>
+				</div>
+				<div id="direccion">
+					<div> <i class="fa-solid fa-location-dot"></i> </div>
+					<div> C. Juan Picornell, 14, 37006 Salamanca </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="segunda_seccion" class="seccion seccion_par"	> <div class="titulo_1"> <h1> <span class="letra_inicial">G</span>IMNASIO DEDICADO A LA ENSEÑANZA DE TAEKWONDO, <br> DEPORTE NACIONAL DE COREA DEL SUR </h1> </div> </div>
 	<div id="tercera_seccion" class="seccion seccion_impar"	> <div class="titulo_1"> <h1> <span class="letra_inicial">I</span>NICIA TU ENTRENAMIENTO <br> CON NOSOTROS </h1> </div> </div>
 	<div id="cuarta_seccion"  class="seccion seccion_par"	> <div class="titulo_1"> <h1> <span class="letra_inicial">I</span>NICIA TU ENTRENAMIENTO <br> CON NOSOTROS </h1> </div> </div>
 	<div id="quinta_seccion"  class="seccion seccion_impar"	> <div class="titulo_1"> <h1> <span class="letra_inicial">I</span>NICIA TU ENTRENAMIENTO <br> CON NOSOTROS </h1> </div> </div>

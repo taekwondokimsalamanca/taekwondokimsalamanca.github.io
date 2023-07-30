@@ -42,7 +42,6 @@ body, h1 { margin: 0px; }
 
 }
 /***********************************/
-/* Cabecera imagen */
 .cabecera img
 {
 
@@ -56,9 +55,9 @@ body, h1 { margin: 0px; }
 	z-index: 999;
 
 }
-
+/***********************************/
 .cabecera .paginas { display: flex; }
-
+/***********************************/
 .cabecera .pagina
 {
 
@@ -67,14 +66,18 @@ body, h1 { margin: 0px; }
 	padding: 16px 0px;
 	text-align: center;
 
-}
+	/* DecoraciOn */
+	cursor: pointer;
 
-.cabecera .pagina:has(> a:hover)
+}
+/***********************************/
+.cabecera .pagina:hover
 {
 
 	/* Colores */
 	background-color: #000000;
 	color: #ffffff;
+
 }
 /**********************************************************************/
 

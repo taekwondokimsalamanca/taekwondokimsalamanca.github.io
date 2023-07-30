@@ -29,18 +29,19 @@
 #titulo_pagina h4 { width: 100%; }
 /**********************************************************************/
 
+/**********************************************************************/
+/* Secciones */
+/***********************************/
 .seccion
 {
 
 	/* Estructura */
+	position: relative;
 	width: 100%;
 	height: 200px;
 
 }
-
-.seccion_impar { text-align: left ; }
-.seccion_par   { text-align: right; }
-
+/***********************************/
 #primera_seccion { background-color: #ffffff; }
 #segunda_seccion { background-color: #fffd94; }
 #tercera_seccion { background-color: #ffda94; }
@@ -48,5 +49,33 @@
 #quinta_seccion  { background-color: #94b6ff; }
 #sexta_seccion   { background-color: #ff9494; }
 #septima_seccion { background-color: #000000; color: #ffffff; }
+/***********************************/
+.seccion .titulo_1
+{
+	/* Estructura */
+	position: absolute;
+	top: 45px;
+}
+.seccion_impar .titulo_1 { left : 30px; text-align: left ; }
+.seccion_par   .titulo_1 { right: 30px; text-align: right; }
+/***********************************/
+.seccion .contenido
+{
+	/* Estructura */
+	position: absolute;
+	top: 55px;
+}
+.seccion_impar .contenido { right: 30px; text-align: right; }
+.seccion_par   .contenido { left : 30px; text-align: left ; }
+/**********************************************************************/
 
-.titulo_1 { padding: 40px; }
+#primera_seccion #contacto { display: flex; text-align: center; }
+#primera_seccion #contacto #telefono, #primera_seccion #contacto #direccion { margin-left: 50px; }
+#primera_seccion #contacto i
+{
+	
+	margin: 15px 0px;
+
+	font-size: 30px;
+
+}
