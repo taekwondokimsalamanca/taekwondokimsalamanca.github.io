@@ -79,3 +79,12 @@
 	font-size: 30px;
 
 }
+
+#taekwondo_cartoon
+{
+	/* Estructura */
+	position: absolute;
+	bottom: 0px;
+	right: 15px;
+	width: 200px;
+}
