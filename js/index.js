@@ -12,6 +12,8 @@ function inicializarPagina()
 
 	setTimeout( function() { cambiarImagen(); }, 3000);
 
+	animacionTKD(document.getElementById("animacionTaekwondista"), "animacionTaekwondista/animacionTaekwondista", 5, 0);
+
 }
 
 function cambiarImagen()
@@ -49,4 +51,35 @@ function imagenActual(imagen_fondo)
 
     imagen_fondo.src = "img/fotosPortada/FotoPortada" + imagen_seleccionada + ".jpg";
     
+}
+
+function animacionTKD(elemento_animacion, nombre_animacion, tamanio_animacion, numero_secuencia_anterior)
+{
+
+	var numero_secuencia;
+	if(numero_secuencia_anterior < tamanio_animacion) numero_secuencia = numero_secuencia_anterior + 1;
+	else numero_secuencia = 1;
+
+	elemento_animacion.src = "img/animacionesTKD/" + nombre_animacion + "_" + numero_secuencia + ".png";
+
+	setTimeout( function () { animacionTKD(elemento_animacion, nombre_animacion, tamanio_animacion, numero_secuencia) } , tiempoAnimacionTKD("animacionTaekwondista",numero_secuencia));
+
+}
+
+function tiempoAnimacionTKD(nombre_animacion, numero_secuencia)
+{
+
+	var segundos_animacion;
+
+	if(nombre_animacion == "animacionTaekwondista")
+	{
+
+		if (numero_secuencia == 5)	segundos_animacion = 3;
+		else 						segundos_animacion = 0.5;
+
+	}
+
+	return segundos_animacion * 1000;  // Milisegundos
+
+
 }
