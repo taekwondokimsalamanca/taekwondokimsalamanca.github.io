@@ -75,7 +75,7 @@ function tiempoAnimacionTKD(nombre_animacion, numero_secuencia)
 	{
 
 		if (numero_secuencia == 5)	segundos_animacion = 3;
-		else 						segundos_animacion = 0.5;
+		else 						segundos_animacion = 0.2;
 
 	}
 

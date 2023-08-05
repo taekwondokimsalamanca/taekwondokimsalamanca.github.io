@@ -43,11 +43,6 @@
 }
 /***********************************/
 #primera_seccion { background-color: #ffffff; }
-#segunda_seccion { background-color: #fffd94; }
-#tercera_seccion { background-color: #ffda94; }
-#cuarta_seccion  { background-color: #94ff9d; }
-#quinta_seccion  { background-color: #94b6ff; }
-#sexta_seccion   { background-color: #ff9494; }
 #septima_seccion { background-color: #000000; color: #ffffff; }
 /***********************************/
 .seccion .titulo_1
@@ -69,7 +64,7 @@
 .seccion_par   .contenido { left : 30px; text-align: left ; }
 /**********************************************************************/
 
-#primera_seccion #contacto { display: flex; text-align: center; }
+#primera_seccion #contacto { display: flex; text-align: center; margin-right: 150px; }
 #primera_seccion #contacto #telefono, #primera_seccion #contacto #direccion { margin-left: 50px; }
 #primera_seccion #contacto i
 {
@@ -87,4 +82,16 @@
 	bottom: 0px;
 	right: 15px;
 	width: 200px;
+}
+
+.logo_redes_sociales
+{
+
+	/* Estructura */
+	margin: 60px 100px;
+
+	/* DecoraciOn */
+	font-size: 75px;
+	cursor: pointer;
+	
 }
