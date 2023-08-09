@@ -63,8 +63,8 @@
 #seccion_principal .titulo_1, #seccion_principal .contenido
 {
 	/* Estructura */
-	width: 50%;
-	margin: 25px 40px;
+	width: 60%;
+	margin: auto 40px;
 }
 /**********************************************************************/
 #seccion_principal #contacto
@@ -73,7 +73,6 @@
 	/* Estructura */
 	display: flex;
 	width: 100%;
-	margin-top: 15px;
 
 }
 /***********************************/
@@ -82,12 +81,12 @@
 
 	/* Estructura */
 	width: 100%;
-	padding: 0px 50px;
 	text-align: center;
 
 }
 /***********************************/
-#seccion_principal #contacto #telefono, #primera_seccion #contacto #direccion { margin-left: 50px; }
+#seccion_principal #contacto #telefono_seccion  { margin-left : 100px; margin-right: 0px; }
+#seccion_principal #contacto #direccion_seccion { margin-right: 100px; margin-left : 0px; }
 /***********************************/
 #seccion_principal #contacto i
 {
@@ -138,12 +137,6 @@
 	/* Estructura */
 	margin-top: 150px;
 
-}
-/***********************************/
-#seccion_principal .contacto_seccion
-{
-	/* Estructura */
-	padding: 0px 100px;
 }
 /***********************************/
 }
