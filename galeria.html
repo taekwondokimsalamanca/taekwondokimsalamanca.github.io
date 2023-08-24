@@ -13,21 +13,25 @@
 
 </head>
 
-<body onload="inicializarPagina()">
+<body onload="dibujarGaleria('menuGaleria')">
 
+	<!-------------------------------------------------------------------------------------------------------------->
+	<!-- CABECERA -->
+	<!------------------------>
 	<div class="cabecera">
 		<div class="paginas">
-			<div class="pagina" onclick="window.location='index.html'"> <strong> INICIO  </strong> </div>
-			<div class="pagina" onclick="window.location='galeria.html'"> <strong> GALERIA </strong> </div>
+			<div class="pagina" onclick="window.location='index.html'"	> <strong> INICIO  </strong> </div>
+			<div class="pagina" onclick="window.location='galeria.html'"	> <strong> GALERIA </strong> </div>
 		</div>
 		<div class="logo" > <img src="img/gimnasioKimLogo.png"> </div>
 	</div>
+	<!-------------------------------------------------------------------------------------------------------------->
 
-	<div id="galeria_cuerpo">
+	<div class="galeria_cuerpo">
 
 		<div class="galeria_fila">
 
-			<div class="galeria_columna">
+			<div class="galeria_columna" id="galeria_columna_1">
 
 				<div class="enlace_galeria_container" onclick="window.location='galeria/inauguracion.html'">
 					<!--------------------------------------------------------------------------------------------------------------------------------->
@@ -51,7 +55,7 @@
 
 			</div>
 
-			<div class="galeria_columna">
+			<div class="galeria_columna" id="galeria_columna_2">
 
 				<div class="enlace_galeria_container" onclick="window.location='galeria/entrenamiento.html'">
 					<!--------------------------------------------------------------------------------------------------------------------------------->
@@ -63,19 +67,9 @@
 					<p class="enlace_galeria_texto"> <span class="letra_inicial">E</span>NTRENAMIENTO </p>
 				</div>
 
-				<div class="enlace_galeria_container" onclick="window.location='galeria/grupo.html'">
-					<!--------------------------------------------------------------------------------------------------------------------------------->
-					<!-- Imagen Grupo 1 -->
-					<img class="imagen_galeria" id="grupo_1" src="https://drive.google.com/uc?export=view&id=
-						1JDkpm_4IEyFEDMVF83QwP3qfZXLWrEez
-					">
-					<!--------------------------------------------------------------------------------------------------------------------------------->
-					<p class="enlace_galeria_texto"> <span class="letra_inicial">G</span>rupo </p>
-				</div>
-
 			</div>
 
-			<div class="galeria_columna">
+			<div class="galeria_columna" id="galeria_columna_3">
 
 				<div class="enlace_galeria_container" onclick="window.location='galeria/elasticidad.html'">
 					<!--------------------------------------------------------------------------------------------------------------------------------->
@@ -85,6 +79,20 @@
 					">
 					<!--------------------------------------------------------------------------------------------------------------------------------->
 					<p class="enlace_galeria_texto"> <span class="letra_inicial">E</span>lasticidad </p>
+				</div>
+
+			</div>
+
+			<div class="galeria_columna" id="galeria_columna_4">
+
+				<div class="enlace_galeria_container" onclick="window.location='galeria/grupo.html'">
+					<!--------------------------------------------------------------------------------------------------------------------------------->
+					<!-- Imagen Grupo 1 -->
+					<img class="imagen_galeria" id="grupo_1" src="https://drive.google.com/uc?export=view&id=
+						1JDkpm_4IEyFEDMVF83QwP3qfZXLWrEez
+					">
+					<!--------------------------------------------------------------------------------------------------------------------------------->
+					<p class="enlace_galeria_texto"> <span class="letra_inicial">G</span>rupo </p>
 				</div>
 
 			</div>

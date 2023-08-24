@@ -8,14 +8,17 @@
 	<link rel="stylesheet" type="text/css" href="../css/galeria.css">													<!-- Hoja de estilos de la pAgina -->
 	<script src="https://kit.fontawesome.com/6a73e4056b.js" crossorigin="anonymous"></script>							<!-- Set Personalizado de Iconos  -->
 
-	<script src="../js/galeria.js"			></script>
-	<script src="../js/jquery-3.7.0.min.js"	></script>
-	<!-- <script> function inicializarPagina() { dibujarImagenes("inauguracion",21); } </script> --> 					<!-- Para aniadir fotos automAticamente (Mas rApido, menos estEtico) -->
+	<script src="../js/galeria.js"					></script>
+	<script src="../js/jquery-3.7.0.min.js"			></script>
+	<script src="../js/galeria/entrenamiento.js"	></script>
 
 </head>
 
-<body onload="inicializarPagina()">
+<body onload="dibujarGaleria('entrenamiento')">
 
+	<!-------------------------------------------------------------------------------------------------------------->
+	<!-- CABECERA -->
+	<!------------------------>
 	<div class="cabecera">
 		<div class="paginas">
 			<div class="pagina" onclick="window.location='../index.html'"	> <strong> INICIO  </strong> </div>
@@ -23,58 +26,7 @@
 		</div>
 		<div class="logo" > <img src="../img/gimnasioKimLogo.png"> </div>
 	</div>
-
-	<div id="galeria_cuerpo">
-
-		<div class="galeria_fila">
-
-			<div class="galeria_columna">
-
-				<!--------------------------------------------------------------------------------------------------------------------------------->
-				<!-- Imagen 1 -->
-				<img class="imagen_galeria" id="entrenamiento_1" src="https://drive.google.com/uc?export=view&id=
-					1csJb7iQjYpfQofCP83EXYUYunflibhD4
-				">
-				<!--------------------------------------------------------------------------------------------------------------------------------->
-
-			</div>
-
-			<div class="galeria_columna">
-
-				<!--------------------------------------------------------------------------------------------------------------------------------->
-				<!-- Video 1 -->
-				<video class="imagen_galeria" id="entrenamiento_v_1" controls="controls" allow="autoplay"> <source type=video/mp4 src="https://drive.google.com/uc?export=view&id=
-					1IPChMkHmlcYaJRY-I30AZ1x53fIuhGkJ
-				"> </source> </video>
-				<!--------------------------------------------------------------------------------------------------------------------------------->
-
-			</div>
-
-			<div class="galeria_columna">
-
-				<!--------------------------------------------------------------------------------------------------------------------------------->
-				<!-- Video 2 -->
-				<video class="imagen_galeria" id="entrenamiento_v_2" controls="controls" allow="autoplay"> <source type=video/mp4 src="https://drive.google.com/uc?export=view&id=
-					1a4M4vHmdXVUDnf7PiFt-O3lfHNaymNjL
-				"> </source> </video>
-				<!--------------------------------------------------------------------------------------------------------------------------------->
-
-			</div>
-
-			<div class="galeria_columna">
-
-				<!--------------------------------------------------------------------------------------------------------------------------------->
-				<!-- Video 3 -->
-				<video class="imagen_galeria" id="entrenamiento_v_3" controls="controls" allow="autoplay"> <source type=video/mp4 src="https://drive.google.com/uc?export=view&id=
-					1Y0ysaQVpkh20gdgoNajjI5a6FhV0vHj_
-				"> </source> </video>
-				<!--------------------------------------------------------------------------------------------------------------------------------->
-
-			</div>
-
-		</div>
-
-	</div>
+	<!-------------------------------------------------------------------------------------------------------------->
 
 </body>
     

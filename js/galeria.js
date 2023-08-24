@@ -2,25 +2,82 @@
 /* Script desarrollado por Javier LOpez Sanchez */
 /************************************************/
 
-/**********************************************************************/
-/* Variables globales */
-var total_inauguracion = 21		; // Imagen en pantalla
-/**********************************************************************/
+var galeria_imagen_id;
+var galeria_video_id;
+var galeria_columnas;
 
-function dibujarImagenes(galeria_nombre, total_imagenes)
+function dibujarGaleria(galeria_nombre)
 {
 
-    for(var i=1; i<=total_imagenes; i++)
-    {
+	galeria_imagen_id = galeria_nombre   + "_"  ;
+	galeria_video_id  = galeria_video_id + "_v_";
 
-		// CreaciOn de la imagen
-        var imagen_seleccionada		= document.createElement('img');
-        imagen_seleccionada.className	= "imagen_galeria"
-        imagen_seleccionada.src		= '../img/galeria/' + galeria_nombre + '/' + galeria_nombre + "_" + i + '.jpg';
+	// Crear cuerpo de la galerIa
+	//-------------------------------------------------------
+	var cuerpoGaleriaTKD = document.createElement('div');
+	cuerpoGaleriaTKD.className = "galeria_cuerpo";
+	document.getElementsByTagName("body")[0].append(cuerpoGaleriaTKD);
+	//-------------------------------------------------------
 
-		// IncorporaciOn de la imagen al menU
-        document.getElementById('galeria_cuerpo').appendChild(imagen_seleccionada);
-		
-    }
-    
+	// Crear fila principal de la galerIa
+	//-------------------------------------------------------
+	var filaGaleriaTKD = document.createElement('div');
+		filaGaleriaTKD.className = "galeria_fila";
+	document.getElementsByClassName("galeria_cuerpo")[0].append(filaGaleriaTKD);
+	//-------------------------------------------------------
+
+	galeria_columnas = [];
+	for(var i=1; i<=4; i++) galeria_columnas[i] = crearColumna(i);
+
+		 if(galeria_nombre == "menuGaleria"		) dibujarMenuGaleria	();
+	else if(galeria_nombre == "inauguracion"	) dibujarInauguracion	();
+	else if(galeria_nombre == "grupo"			) dibujarGrupo			();
+	else if(galeria_nombre == "elasticidad"		) dibujarElasticidad	();
+	else if(galeria_nombre == "entrenamiento"	) dibujarEntrenamiento	();
+	else if(galeria_nombre == "noche_jueves"	) dibujarNocheJueves	();
+
+}
+
+function crearColumna(numero_columna)
+{
+
+	var columnaGaleriaTKD = document.createElement('div');
+		columnaGaleriaTKD.className = "galeria_columna";
+		columnaGaleriaTKD.id = "galeria_columna_" + numero_columna;
+
+	document.getElementsByClassName("galeria_fila")[0].append(columnaGaleriaTKD); // Aniadir columna a la galerIa correspondiente
+
+	return columnaGaleriaTKD;
+
+}
+
+function crearImagen(imagen_drive_id_numero, imagen_drive_url){
+
+	var imagenTKD = document.createElement('img');
+		imagenTKD.className	= "imagen_galeria";
+		imagenTKD.id		= galeria_imagen_id + imagen_drive_id_numero;
+		imagenTKD.alt		= "| No se ha podido cargar la imagen. Intentalo más tarde.";
+		imagenTKD.src		= "https://drive.google.com/uc?export=view&id=" + imagen_drive_url;
+
+	return imagenTKD;
+
+}
+
+function crearVideo(video_drive_id_numero, video_drive_url){
+
+	var videoTKD = document.createElement('video');
+		videoTKD.className	= "imagen_galeria";
+		videoTKD.id			= galeria_video_id + video_drive_id_numero;
+		videoTKD.controls	= "controls"
+		videoTKD.src		= "https://drive.google.com/uc?export=view&id=" + video_drive_url;
+
+	return videoTKD;
+
+}
+
+function dibujarMenuGaleria()
+{
+
+	console.log("PENDIENTE ADAPTAR")
+
 }
