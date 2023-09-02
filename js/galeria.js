@@ -29,12 +29,15 @@ function dibujarGaleria(galeria_nombre)
 	galeria_columnas = [];
 	for(var i=1; i<=4; i++) galeria_columnas[i] = crearColumna(i);
 
-		 if(galeria_nombre == "menuGaleria"		) dibujarMenuGaleria	();
-	else if(galeria_nombre == "inauguracion"	) dibujarInauguracion	();
-	else if(galeria_nombre == "grupo"			) dibujarGrupo			();
-	else if(galeria_nombre == "elasticidad"		) dibujarElasticidad	();
-	else if(galeria_nombre == "entrenamiento"	) dibujarEntrenamiento	();
-	else if(galeria_nombre == "noche_jueves"	) dibujarNocheJueves	();
+		 if(galeria_nombre == "menuGaleria"			) dibujarMenuGaleria		();
+	else if(galeria_nombre == "inauguracion"		) dibujarInauguracion		();
+	else if(galeria_nombre == "grupo"				) dibujarGrupo				();
+	else if(galeria_nombre == "elasticidad"			) dibujarElasticidad		();
+	else if(galeria_nombre == "entrenamiento"		) dibujarEntrenamiento		();
+	else if(galeria_nombre == "noche_jueves"		) dibujarNocheJueves		();
+	else if(galeria_nombre == "despedida_marie"		) dibujarDespedidaMarie		();
+	else if(galeria_nombre == "despedida_paola"		) dibujarDespedidaPaola		();
+	else if(galeria_nombre == "entrega_cinturones"	) dibujarEntregaCinturones	();
 
 }
 
