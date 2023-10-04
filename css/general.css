@@ -116,7 +116,7 @@ body, h1 { margin: 0px; }
 {
 
 	/* Estructura */
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	width: 100%;
 	height: 200px;

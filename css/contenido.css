@@ -1,0 +1,44 @@
+#items_cinturon
+{
+
+	padding: 100px;
+	padding-bottom: 250px !important;
+
+}
+
+#items_cinturon :first-child
+{
+
+	font-weight: bold;
+
+}
+
+#items_cinturon tr
+{
+
+	width: 100%;
+
+}
+
+#items_cinturon tr :first-child
+{
+
+	font-weight: bold;
+
+}
+
+#items_cinturon td
+{
+
+	/* Estructura */
+	width: 500px;
+	padding: 25px;
+	text-align: center;
+
+	/* DecoraciOn */
+	border: solid black 1px;
+
+}
+
+#items_cinturon .cinturon_amarillo	.cinturon_nombre { color: #b19f00; }
+#items_cinturon .cinturon_naranja 	.cinturon_nombre { color: #b16400; }
