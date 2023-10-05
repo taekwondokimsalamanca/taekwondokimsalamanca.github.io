@@ -38,6 +38,9 @@ function dibujarGaleria(galeria_nombre)
 	else if(galeria_nombre == "despedida_marie"		) dibujarDespedidaMarie		();
 	else if(galeria_nombre == "despedida_paola"		) dibujarDespedidaPaola		();
 	else if(galeria_nombre == "entrega_cinturones"	) dibujarEntregaCinturones	();
+	else if(galeria_nombre == "cinturon_amarillo"	) dibujarCinturonAmarillo	();
+	else if(galeria_nombre == "cinturon_azul"		) dibujarCinturonAzul		();
+	else if(galeria_nombre == "cinturon_rojo"		) dibujarCinturonRojo		();
 
 }
 

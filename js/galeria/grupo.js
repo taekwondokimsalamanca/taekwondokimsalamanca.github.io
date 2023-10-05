@@ -11,6 +11,7 @@ function dibujarGrupo()
 
 	// COLUMNA 3
 	galeria_columnas[3].append(crearImagen(3 , "1gGnqyUP5IvbWTR1IGKjn-a3Zq9cEe_93"));
+	galeria_columnas[3].append(crearImagen(7 , "1S9dRh8yzpJNeKWvt2c_y-mJTLDcRWmt-"));
 
 	// COLUMNA 4
 	galeria_columnas[4].append(crearImagen(4 , "11TR5zuFYxr2JsnZDMg6VtDxVVqHrHnaJ"));

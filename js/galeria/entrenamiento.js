@@ -3,6 +3,7 @@ function dibujarEntrenamiento()
 
 	// COLUMNA 1
 	galeria_columnas[1].append(crearImagen(1 , "1csJb7iQjYpfQofCP83EXYUYunflibhD4"));
+	galeria_columnas[1].append(crearImagen(2 , "1OLxQZTwf2nr51u0Jax08HNq1c5dvmFVi"));
 
 	// COLUMNA 2
 	galeria_columnas[2].append(crearVideo (1 , "1IPChMkHmlcYaJRY-I30AZ1x53fIuhGkJ"));
