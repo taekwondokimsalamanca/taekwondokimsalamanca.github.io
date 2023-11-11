@@ -16,6 +16,7 @@ function dibujarNocheJueves()
 	galeria_columnas[2].append(crearImagen(14, "1Q99silgyytzsjnbLLrAHKeu245fa4njV"));
 	galeria_columnas[2].append(crearImagen(18, "1JnP9tHzNbFMbJdBCBzakLy_EGGXpiAvY"));
 	galeria_columnas[2].append(crearImagen(22, "1Odz2FDpBIIwJ33gpOmcYrxJ692RakB7B"));
+	galeria_columnas[2].append(crearImagen(25, "1hknPcDbrgA24yz-a659f81pVCxv-JvZ3"));
 
 	// COLUMNA 3
 	galeria_columnas[3].append(crearImagen(3 , "1PnjVCks8McHevQLZPH76noWtvpJa5RaU"));
@@ -24,7 +25,8 @@ function dibujarNocheJueves()
 	galeria_columnas[3].append(crearImagen(15, "1_873CWxZtrODLxiy867R6jpZpcAUWGS1"));
 	galeria_columnas[3].append(crearImagen(19, "1hVftUHdHbzwfnpyvcltY4DzeElYznD9Z"));
 	galeria_columnas[3].append(crearImagen(23, "13v6kvd5ZhyTxVPiChNMSEgrMI_dWJKC8"));
-
+	galeria_columnas[3].append(crearImagen(26, "1kg2mbU2-3NOcmUHJRwUfAany_6LVNklt"));
+	
 	// COLUMNA 4
 	galeria_columnas[4].append(crearImagen(4 , "1BcBBwJKKRLhdeUtoNRmUbQnveLL3oAVS"));
 	galeria_columnas[4].append(crearImagen(6 , "1dvix4jtUHkIGRwGXy-UdksEvNn2TLYp6"));
