@@ -48,6 +48,7 @@ function CrearTablaCinturones()
 
 }
 
+/* FunciOn para crear un nuevo Item, recibiendo como parAmetro el nombre y el tipo del item, asI como el nombre del cinturOn */
 function NuevoItemCinturon(nombre_item, nombre_tipo, nombre_cinturon)
 {
 
@@ -62,6 +63,7 @@ function NuevoItemCinturon(nombre_item, nombre_tipo, nombre_cinturon)
 
 }
 
+/* FunciOn para asignar un dato al item en una columna dentro de su fila */
 function NuevaColumnaCinturon(dato_item_cinturon, claseItem)
 {
 

@@ -41,6 +41,7 @@ function dibujarGaleria(galeria_nombre)
 	else if(galeria_nombre == "cinturon_amarillo"	) dibujarCinturonAmarillo	();
 	else if(galeria_nombre == "cinturon_azul"		) dibujarCinturonAzul		();
 	else if(galeria_nombre == "cinturon_rojo"		) dibujarCinturonRojo		();
+	else if(galeria_nombre == "cena_navidad_2023"	) dibujarCenaNavidad2023	();
 
 }
 
