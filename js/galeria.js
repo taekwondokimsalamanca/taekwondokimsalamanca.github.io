@@ -64,7 +64,7 @@ function crearImagen(imagen_drive_id_numero, imagen_drive_url){
 		imagenTKD.className	= "imagen_galeria";
 		imagenTKD.id		= galeria_imagen_id + imagen_drive_id_numero;
 		imagenTKD.alt		= "| No se ha podido cargar la imagen. Intentalo más tarde.";
-		imagenTKD.src		= "https://drive.google.com/uc?export=view&id=" + imagen_drive_url;
+		imagenTKD.src		= "https://drive.google.com/thumbnail?id=" + imagen_drive_url + "&sz=w1000";
 
 	return imagenTKD;
 
@@ -72,11 +72,12 @@ function crearImagen(imagen_drive_id_numero, imagen_drive_url){
 
 function crearVideo(video_drive_id_numero, video_drive_url){
 
-	var videoTKD = document.createElement('video');
+	var videoTKD = document.createElement('iframe');
 		videoTKD.className	= "imagen_galeria";
 		videoTKD.id			= galeria_video_id + video_drive_id_numero;
-		videoTKD.controls	= "controls"
-		videoTKD.src		= "https://drive.google.com/uc?export=view&id=" + video_drive_url;
+		videoTKD.controls	= "controls";
+		videoTKD.src		= "https://drive.google.com/file/d/" + video_drive_url + "/preview";
+		videoTKD.setAttribute('allowFullScreen', '');
 
 	return videoTKD;
 
